@@ -1,0 +1,101 @@
+.text {
+    color: #414536;
+    line-height: 24px;
+}
+
+.title {
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 60.5px;
+    color: #2C2F24;
+}
+
+.informationAboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    .infoHealthy {
+        background-color: #F9F9F7;
+        padding: 85px 0 120px 0;
+
+        .wrapper {
+            max-width: 1296px;
+            display: flex;
+            gap: 140px;
+            margin: 0 auto;
+
+            .textBlock {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-self: center;
+
+                .boldestText {
+                    color: #2C2F24;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    .infoGuest {
+        display: flex;
+        gap: 131px;
+        padding: 120px 0 120px 0;
+        max-width: 1296px;
+        margin: 0 auto;
+
+        .statisticWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+
+            .statisticDescroption {
+                display: flex;
+                flex-direction: column;
+                gap: 20;
+            }
+
+            .statistic {
+                display: flex;
+                gap: 24px;
+                flex-wrap: wrap;
+                max-width: 610px;
+
+                .statisticBlock {
+                    border: 1px solid #DBDFD0;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 293px;
+                    height: 174px;
+
+                    .counter {
+                        font-family: Playfair Display;
+                        font-weight: 500;
+                        font-size: 55px;
+                        line-height: 60.5px;
+                        letter-spacing: 0px;
+                        color: #2C2F24;
+                    }
+
+                    .nameOfCounter {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28px;
+                        letter-spacing: 0px;
+                        color: #414536;
+                    }
+                }
+            }
+        }
+
+    }
+}

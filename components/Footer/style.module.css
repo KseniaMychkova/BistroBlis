@@ -1,0 +1,71 @@
+.footer {
+    background-color: #474747;
+
+    .wrapper {
+        max-width: 1296px;
+        display: flex;
+        justify-content: space-between;
+        padding: 120px 0 100 0;
+        color: #DBDFD0;
+        margin: 0 auto;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 293px;
+
+            p {
+                color: #ADB29E;
+            }
+        }
+
+        .navigationFooter {
+            display: flex;
+            gap: 120px;
+
+            .pages {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 40px;
+
+                h4 {
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+
+                .navPages {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: start;
+                }
+            }
+        }
+
+        .followOnInstagram {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 403px;
+
+            h4 {
+                font-weight: 700;
+                line-height: 24px;
+                color: #fff;
+            }
+
+            .imgOnInstagram {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                .img {
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}

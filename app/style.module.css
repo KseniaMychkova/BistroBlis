@@ -1,0 +1,177 @@
+.backgroundImg {
+    background-image: url(../public/backgroundMain.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    .main {
+        max-width: 667px;
+        margin: auto;
+        padding: 207px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 100px;
+            line-height: 96px;
+            font-weight: 400;
+            text-align: center;
+            color: #2C2F24;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            color: #2C2F24;
+
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                border: 1.5px solid #2C2F24;
+                border-radius: 118px;
+                color: #182226;
+                font-weight: 700;
+                padding: 20px 32px;
+
+                &:first-of-type {
+                    background-color: #AD343E;
+                    border: none;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+}
+
+.reviewProductsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    padding: 92px 0 120px 0;
+
+    h2 {
+        font-family: Playfair Display;
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 60.5px;
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 24px;
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border: 1.5px solid #DBDFD0;
+            border-radius: 12px;
+            max-width: 306px;
+            padding: 40px 34px 32px 34px;
+            justify-content: center;
+            align-items: center;
+
+            .itemText {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #2C2F24;
+                }
+
+                p {
+                    line-height: 24px;
+                    text-align: center;
+                    color: #414536;
+                }
+
+            }
+
+            button {
+                font-weight: 700;
+                line-height: 24px;
+                vertical-align: middle;
+                color: #AD343E;
+
+            }
+
+        }
+    }
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F7;
+    align-items: center;
+
+    .containerServices {
+        max-width: 1296px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        align-items: center;
+        padding: 120px 0 120px 0;
+
+        h2 {
+            font-family: Playfair Display;
+            font-weight: 500;
+            font-size: 55px;
+            line-height: 60.5px;
+            color: #2C2F24;
+            max-width: 675px;
+            align-self: self-start;
+
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 24px;
+
+            .itemServices {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                border-radius: 12px;
+                max-width: 306px;
+                justify-content: center;
+                align-items: center;
+
+                .itemServiceText {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h3 {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: #2C2F24;
+                    }
+
+                    p {
+                        line-height: 24px;
+                        color: #414536;
+                    }
+                }
+            }
+        }
+    }
+}
