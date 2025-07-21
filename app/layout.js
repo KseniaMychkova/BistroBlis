@@ -1,14 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const playfair_display = Playfair_Display({
+  // variable: "--font-geist-sans",
+  subsets: ["latin", "cyrillic"],
+  weight: ['400', '500', '600', '700', '800', '900'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dn_sans = DM_Sans({
+  // variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ['400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${playfair_display.className} ${dn_sans.className}`}
       >
         {children}
       </body>
