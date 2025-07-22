@@ -101,6 +101,24 @@
                         }
 
                     }
+
+                    .selected {
+                        background-color: #403F3D;
+                        color: #FFFFFF;
+
+                        div {
+                            background-color: #FFFFFF;
+                            color: #403F3D;
+
+                            P {
+                                color: #403F3D;
+                            }
+                        }
+
+                        p {
+                            color: #FFFFFF;
+                        }
+                    }
                 }
             }
         }

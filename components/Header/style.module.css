@@ -52,11 +52,12 @@
             }
         }
     }
+
     .backgroundBottom {
         background-color: white;
 
         .navigation {
-             max-width: 1293px;
+            max-width: 1293px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -77,26 +78,30 @@
                     color: #474747;
                 }
             }
+
             .actions {
                 display: flex;
                 gap: 8px;
 
-                button {
+                a {
                     font-weight: 500;
                     line-height: 24px;
                     padding: 4px 16px;
                     border-radius: 34px;
+                    color: #2C2F24;
 
-                    &:hover{
+                    &:hover {
                         background-color: #DBDFD0;
                     }
                 }
             }
+
             .bookingBtn {
                 border: 1.5px solid #2C2F24;
                 border-radius: 118px;
                 font-weight: 700;
                 padding: 12px 24px;
+                color: #182226;
             }
         }
     }

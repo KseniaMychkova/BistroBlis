@@ -1,8 +1,6 @@
 'use client'
 
 import style from './style.module.css'
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -21,9 +19,6 @@ function Basket() {
     }
 
     return (
-        <>
-            <Header />
-
             <section className={style.basket}>
                 <h1>Basket</h1>
                 <div className={style.wrapper}>
@@ -32,7 +27,7 @@ function Basket() {
                             <div className={style.menuItems} >
                                 <Image src={el.imgPath} alt='' priority/>
                                 <div className={style.wrapperText}>
-                                    <p className={style.price}>$  {el.price}</p>
+                                    <p className={style.price}>$  {el.calculatedPrice}</p>
                                     <h4>{el.name}</h4>
                                     <p className={style.description}>{el.description}</p>
                                 </div>
@@ -42,9 +37,6 @@ function Basket() {
                     {productsCard.length > 0 ? <button onClick={clearBasket}>Clear Basket</button> : null}
                 </div>
             </section>
-
-            <Footer />
-        </>
     )
 }
 

@@ -13,8 +13,9 @@ const menuItems = [
 id: 1,
 name: "Fried Eggs",
 price: 9.99,
+category: 'main courses',
 imgPath: eggs,
-description: "Classic sunny-side-up eggs", // Изменено shortDescription → description
+description: "Classic sunny-side-up eggs",
 longDescription: "Perfectly fried eggs with crispy edges and runny yolks, served with fresh lettuce and a pinch of sea salt. Cooked in premium olive oil for enhanced flavor.",
 sizes: [
   { size: "S", unit: "piece", quantity: 1 },
@@ -26,8 +27,9 @@ sizes: [
 id: 2,
 name: "Hawaiian Pizza",
 price: 15.99,
+category: 'main courses',
 imgPath: pizza,
-description: "Sweet & savory tropical pizza", // Изменено
+description: "Sweet & savory tropical pizza",
 longDescription: "Traditional pizza with tomato sauce, mozzarella cheese, smoked ham, and juicy pineapple chunks. Baked in a wood-fired oven for authentic crispiness.",
 sizes: [
   { size: "S", unit: "slice", quantity: 1 },
@@ -39,8 +41,9 @@ sizes: [
 id: 3,
 name: "Martinez Cocktail",
 price: 7.25,
+category: 'lemonade',
 imgPath: coctail,
-description: "Classic gin-based cocktail", // Изменено
+description: "Classic gin-based cocktail",
 longDescription: "A refined mix of Old Tom gin, sweet vermouth, maraschino liqueur, and orange bitters. Garnished with a lemon twist and Luxardo cherry.",
 sizes: [
   { size: "S", unit: "cl", quantity: 6 },
@@ -52,8 +55,9 @@ sizes: [
 id: 4,
 name: "Butterscotch Cake",
 price: 20.99,
+category: 'dessert',
 imgPath: cake,
-description: "Decadent caramel-flavored dessert", // Изменено
+description: "Decadent caramel-flavored dessert",
 longDescription: "Layers of moist vanilla sponge cake filled with creamy butterscotch mousse and topped with gold leaf flakes. Served with salted caramel sauce.",
 sizes: [
   { size: "S", unit: "slice", quantity: 1 },
@@ -65,8 +69,9 @@ sizes: [
 id: 5,
 name: "Mint Lemonade",
 price: 5.89,
+category: 'lemonade',
 imgPath: lemonade,
-description: "Refreshing citrus drink", // Изменено
+description: "Refreshing citrus drink",
 longDescription: "Freshly squeezed lemons blended with organic mint leaves and a touch of agave syrup. Served over crushed ice with a mint sprig garnish.",
 sizes: [
   { size: "S", unit: "ml", quantity: 250 },
@@ -78,8 +83,9 @@ sizes: [
 id: 6,
 name: "Chocolate Icecream",
 price: 18.05,
+category: 'dessert',
 imgPath: icecream,
-description: "Premium Belgian chocolate", // Изменено
+description: "Premium Belgian chocolate",
 longDescription: "Velvety ice cream made with 70% dark Belgian chocolate and Madagascar vanilla beans. Topped with chocolate shavings and raspberry coulis.",
 sizes: [
   { size: "S", unit: "scoop", quantity: 1 },
@@ -91,8 +97,9 @@ sizes: [
 id: 7,
 name: "Cheese Burger",
 price: 12.55,
+category: 'main courses',
 imgPath: burger,
-description: "Juicy beef patty with cheese", // Изменено
+description: "Juicy beef patty with cheese",
 longDescription: "100% Angus beef patty with melted cheddar, crispy lettuce, pickles, and special sauce in a brioche bun. Served with hand-cut fries.",
 sizes: [
   { size: "S", unit: "single", quantity: 1 },
@@ -104,8 +111,9 @@ sizes: [
 id: 8,
 name: "Classic Waffles",
 price: 12.99,
+category: 'dessert',
 imgPath: waffles,
-description: "Golden crispy waffles", // Изменено
+description: "Golden crispy waffles",
 longDescription: "Authentic Belgian waffles with pearl sugar pockets. Served with whipped cream, seasonal berries, and maple syrup drizzle.",
 sizes: [
   { size: "S", unit: "piece", quantity: 1 },

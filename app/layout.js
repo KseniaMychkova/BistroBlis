@@ -1,5 +1,8 @@
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header/Header";
+import Footer from '@/components/Footer/Footer'
+
 
 const playfair_display = Playfair_Display({
   // variable: "--font-geist-sans",
@@ -24,7 +27,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${playfair_display.className} ${dn_sans.className}`}
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

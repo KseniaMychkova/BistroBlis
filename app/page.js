@@ -1,5 +1,3 @@
-import Header from "@/components/Header/Header";
-import Footer from '@/components/Footer/Footer'
 import Image from "next/image"
 import style from './style.module.css'
 import Breakfast from '../public/iconBreakfast.svg'
@@ -10,6 +8,7 @@ import Caterings from '../public/caterings.png'
 import Birthdays from '../public/birthdays.png'
 import Weddings from '../public/weddings.png'
 import Events from '../public/events.png'
+import Link from "next/link";
 
 
 export default function Home() {
@@ -29,16 +28,14 @@ export default function Home() {
 
 
   return (
-    <>
-      <Header />
       <main>
         <section className={style.backgroundImg}>
           <div className={style.main}>
             <h1>Best food for <br />your taste</h1>
             <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
             <div className={style.buttons}>
-              <button> Book A Table</button>
-              <button>Explore Menu</button>
+              <Link href='#'><button className={style.btn}> Book A Table</button></Link>
+              <Link className={style.btn} href="/menu"><button>Explore Menu</button></Link>
             </div>
           </div>
         </section>
@@ -52,7 +49,7 @@ export default function Home() {
                 <h3>{el.title}</h3>
                 <p>{el.description}</p>
               </div>
-              <button>Explore Menu</button>
+              <Link className={style.btnToMenu} href='/menu'><button>Explore Menu</button></Link>
             </div>)}
           </div>
         </section>
@@ -76,7 +73,5 @@ export default function Home() {
 
         </section>
       </main>
-      <Footer />
-    </>
   );
 }

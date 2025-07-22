@@ -1,10 +1,15 @@
+'use client'
 import Image from "next/image"
 import style from './style.module.css'
 import Phone from './img/phone.svg'
 import Mail from './img/mail.svg'
 import Logo from './img/logo.svg'
+import Link from "next/link"
+import { usePathname } from 'next/navigation'
 
 function Header() {
+    const pathname = usePathname()
+
     return (
         <div className={style.header}>
             <div className={style.backgrountTop}>
@@ -31,15 +36,18 @@ function Header() {
             <div className={style.backgroundBottom}>
                 <div className={style.navigation}>
                     <div className={style.logo}>
-                        <Image src={Logo} alt='logo'/>
+                        <Image src={Logo} alt='logo' />
                         <p>Bistro Bliss</p>
                     </div>
                     <nav className={style.actions}>
-                        <button>Home</button>
-                        <button>About</button>
-                        <button>Menu</button>
+                        <Link href="/"><button>Home</button></Link>
+                        <Link href="/information"><button>About</button></Link>
+                        <Link href="/menu"><button>Menu</button></Link>
                     </nav>
-                    <button className={style.bookingBtn}>Book A Table</button>
+                    {pathname === '/' ?
+                        <Link className={style.bookingBtn} href='#'>Book A Table</Link> :
+                        <Link className={style.bookingBtn} href='/basket'>Basket</Link>
+                    }
 
                 </div>
 

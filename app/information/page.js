@@ -1,5 +1,3 @@
-import Header from "@/components/Header/Header";
-import Footer from '@/components/Footer/Footer'
 import style from './style.module.css'
 import Image from "next/image";
 import contactsInfoImg from '../../public/contactsInfo.png'
@@ -14,8 +12,6 @@ export default function Home() {
         { id: 4, name: 'Satisfied Customers', counter: '100%' }
     ]
     return (
-        <>
-            <Header />
             <section className={style.informationAboutUs}>
                 <div className={style.infoHealthy}>
                     <div className={style.wrapper}>
@@ -45,7 +41,5 @@ export default function Home() {
                     <Image src={statisticBlockImg} alt='' />
                 </div>
             </section>
-            <Footer />
-        </>
     );
 }
