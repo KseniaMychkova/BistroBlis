@@ -2,12 +2,22 @@
     background-color: #474747;
     padding: 120px 0 100 0;
 
+    @media screen and (max-width: 1340px) {
+        padding: 40px 40px 40px 40px;
+    }
+
     .wrapper {
         max-width: 1296px;
         display: flex;
         justify-content: space-between;
         color: #DBDFD0;
         margin: 0 auto;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
 
         .logo {
             display: flex;
@@ -22,7 +32,9 @@
 
         .navigationFooter {
             display: flex;
-            gap: 120px;
+            justify-content: space-between;
+            max-width: 330px;
+            gap: 50px;
 
             .pages {
                 display: flex;
@@ -51,6 +63,15 @@
             gap: 40px;
             max-width: 403px;
 
+            @media screen and (max-width: 1100px) {
+                padding-top: 25px;
+                gap: 15px;
+            }
+
+            @media screen and (max-width: 485px) {
+                flex-direction: row;
+            }
+
             h4 {
                 font-weight: 700;
                 line-height: 24px;
@@ -62,8 +83,25 @@
                 gap: 15px;
                 flex-wrap: wrap;
 
+                @media screen and (max-width: 485px) {
+                    display: none;
+                }
+
                 .img {
                     border-radius: 12px;
+                }
+            }
+
+            .iconInstagram {
+                display: none;
+
+                @media screen and (max-width: 485px) {
+                    background-image: url(../../public/instargram.svg);
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background-size: cover;
+
                 }
             }
         }

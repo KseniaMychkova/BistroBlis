@@ -9,6 +9,11 @@
     font-size: 55px;
     line-height: 60.5px;
     color: #2C2F24;
+
+    @media screen and (max-width: 412px) {
+        font-size: 40px;
+
+    }
 }
 
 .informationAboutUs {
@@ -16,15 +21,47 @@
     flex-direction: column;
     gap: 120px;
 
+    @media screen and (max-width: 1160px) {
+        gap: 0;
+    }
+
     .infoHealthy {
         background-color: #F9F9F7;
         padding: 85px 0 120px 0;
+
+        @media screen and (max-width: 1340px) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @media screen and (max-width: 630px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
 
         .wrapper {
             max-width: 1296px;
             display: flex;
             gap: 140px;
             margin: 0 auto;
+
+            @media screen and (max-width: 1160px) {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .imgBlock {
+                max-width: 649px;
+                width: 100%;
+
+                img {
+                    max-width: 649px;
+                    width: 100%;
+                    object-fit: contain;
+                    height: auto;
+                }
+            }
 
             .textBlock {
                 display: flex;
@@ -49,15 +86,35 @@
         max-width: 1296px;
         margin: 0 auto;
 
+        @media screen and (max-width: 1340px) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @media screen and (max-width: 1160px) {
+            flex-direction: column;
+            gap: 35px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 630px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
         .statisticWrapper {
             display: flex;
             flex-direction: column;
             gap: 60px;
 
+            @media screen and (max-width: 1160px) {
+                align-items: center;
+            }
+
             .statisticDescroption {
                 display: flex;
                 flex-direction: column;
-                gap: 20;
+                gap: 15px;
             }
 
             .statistic {
@@ -65,6 +122,7 @@
                 gap: 24px;
                 flex-wrap: wrap;
                 max-width: 610px;
+                justify-content: center;
 
                 .statisticBlock {
                     border: 1px solid #DBDFD0;
@@ -74,7 +132,8 @@
                     gap: 15px;
                     justify-content: center;
                     align-items: center;
-                    width: 293px;
+                    max-width: 293px;
+                    width: 100%;
                     height: 174px;
 
                     .counter {
@@ -97,5 +156,11 @@
             }
         }
 
+        img {
+            width: 100%;
+            max-width: 555px;
+            object-fit: contain;
+            height: auto;
+        }
     }
 }

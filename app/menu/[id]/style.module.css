@@ -6,19 +6,37 @@
     margin: 0 auto;
     padding: 88px 0 137px 0;
 
+    @media screen and (max-width: 1340px) {
+        padding: 30px 40px 30px 40px;
+    }
+
     .product {
         display: flex;
         gap: 90px;
+
+        @media screen and (max-width: 790px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
 
         .info {
             display: flex;
             flex-direction: column;
             gap: 20px;
 
+            @media screen and (max-width: 790px) {
+                align-items: center;
+            }
+
             .text {
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
+
+                @media screen and (max-width: 790px) {
+                    align-items: center;
+                }
 
                 h2 {
                     font-family: Playfair Display;
@@ -47,6 +65,7 @@
                 .sizesBtns {
                     display: flex;
                     gap: 8px;
+                    flex-wrap: wrap;
 
                     .btnWrapper {
                         border: 1px solid #403F3D;

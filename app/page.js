@@ -28,50 +28,47 @@ export default function Home() {
 
 
   return (
-      <main>
-        <section className={style.backgroundImg}>
-          <div className={style.main}>
-            <h1>Best food for <br />your taste</h1>
-            <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
-            <div className={style.buttons}>
-              <Link href='#'><button className={style.btn}> Book A Table</button></Link>
-              <Link className={style.btn} href="/menu"><button>Explore Menu</button></Link>
-            </div>
+    <main>
+      <section className={style.backgroundImg}>
+        <div className={style.main}>
+          <h1>Best food for <br />your taste</h1>
+          <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
+          <div className={style.buttons}>
+            <Link href='#'><button className={style.btn}> Book A Table</button></Link>
+            <Link className={style.btn} href="/menu"><button>Explore Menu</button></Link>
           </div>
-        </section>
-        <section className={style.reviewProductsItem}>
-          <h2>Browse Our Menu</h2>
+        </div>
+      </section>
+      <section className={style.reviewProductsItem}>
+        <h2>Browse Our Menu</h2>
+        <div className={style.wrapper}>
+
+          {menuItem.map((el, index) => <div key={index} className={style.items}>
+            <Image src={el.img} alt={el.title} />
+            <div className={style.itemText}>
+              <h3>{el.title}</h3>
+              <p>{el.description}</p>
+            </div>
+            <Link className={style.btnToMenu} href='/menu'><button>Explore Menu</button></Link>
+          </div>)}
+        </div>
+      </section>
+
+      <section className={style.services}>
+        <div className={style.containerServices}>
+          <h2>We also offer unique services for your events</h2>
           <div className={style.wrapper}>
-
-            {menuItem.map((el, index) => <div key={index} className={style.items}>
-              <Image src={el.img} alt={el.title} />
-              <div className={style.itemText}>
-                <h3>{el.title}</h3>
-                <p>{el.description}</p>
-              </div>
-              <Link className={style.btnToMenu} href='/menu'><button>Explore Menu</button></Link>
-            </div>)}
+            {ourServices.map((el, index) =>
+              <div key={index} className={style.itemServices}>
+                <Image className={style.img} src={el.img} alt={el.title} />
+                <div className={style.itemServiceText}>
+                  <h3>{el.title}</h3>
+                  <p>{el.description}</p>
+                </div>
+              </div>)}
           </div>
-        </section>
-
-        <section className={style.services}>
-          <div className={style.containerServices}>
-            <h2>We also offer unique services for your events</h2>
-            <div className={style.wrapper}>
-              {ourServices.map((el, index) =>
-                <div key={index} className={style.itemServices}>
-                  <Image src={el.img} alt={el.title} />
-                  <div className={style.itemServiceText}>
-                    <h3>{el.title}</h3>
-                    <p>{el.description}</p>
-                  </div>
-                </div>)}
-
-            </div>
-
-          </div>
-
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
   );
 }

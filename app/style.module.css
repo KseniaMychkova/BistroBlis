@@ -1,17 +1,31 @@
 .backgroundImg {
+    display: flex;
     background-image: url(../public/backgroundMain.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 1600px;
+    width: 100%;
+    height: 951px;
+    align-items: center;
 
+    @media screen and (max-width: 1160px) {
+        max-width: 1160px;
+        background-position: right bottom;
+    }
 
     .main {
         max-width: 667px;
         margin: auto;
-        padding: 207px 0;
         display: flex;
         flex-direction: column;
         gap: 32px;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 1160px) {
+            padding-top: 190px;
+        }
 
         h1 {
             font-family: "Playfair Display", serif;
@@ -20,6 +34,15 @@
             font-weight: 400;
             text-align: center;
             color: #2C2F24;
+
+            @media screen and (max-width: 992px) {
+                font-size: 70px;
+            }
+
+            @media screen and (max-width: 640px) {
+                font-size: 45px;
+                font-weight: 700;
+            }
         }
 
         p {
@@ -28,6 +51,9 @@
             text-align: center;
             color: #2C2F24;
 
+            @media screen and (max-width: 690px) {
+                max-width: 300px;
+            }
         }
 
         .buttons {
@@ -43,6 +69,12 @@
                 font-weight: 700;
                 padding: 20px 32px;
 
+                @media screen and (max-width: 600px) {
+                    background-color: #AD343E;
+                    border: none;
+                    color: #FFFFFF;
+                }
+
                 &:first-of-type {
                     background-color: #AD343E;
                     border: none;
@@ -51,7 +83,6 @@
             }
         }
     }
-
 }
 
 .reviewProductsItem {
@@ -70,6 +101,8 @@
 
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
 
         .items {
@@ -101,7 +134,6 @@
                     text-align: center;
                     color: #414536;
                 }
-
             }
 
             .btnToMenu {
@@ -109,9 +141,7 @@
                 line-height: 24px;
                 vertical-align: middle;
                 color: #AD343E;
-
             }
-
         }
     }
 }
@@ -138,12 +168,14 @@
             color: #2C2F24;
             max-width: 675px;
             align-self: self-start;
-
         }
 
         .wrapper {
             display: flex;
+            flex-wrap: wrap;
             gap: 24px;
+            max-width: 1296px;
+            justify-content: center;
 
             .itemServices {
                 display: flex;
@@ -154,10 +186,15 @@
                 justify-content: center;
                 align-items: center;
 
+                .img {
+                    max-width: 306px;
+                }
+
                 .itemServiceText {
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
+
 
                     h3 {
                         font-weight: 700;
@@ -173,5 +210,14 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1340px) {
+
+    .reviewProductsItem,
+    .services {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

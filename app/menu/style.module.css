@@ -8,6 +8,10 @@
     padding-bottom: 147px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1340px) {
+        padding: 30px 40px 30px 40px;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -41,6 +45,10 @@
             display: flex;
             gap: 16px;
 
+            @media screen and (max-width: 1340px) {
+                flex-wrap: wrap;
+            }
+
             .btn {
                 display: flex;
                 gap: 8px;
@@ -69,16 +77,12 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-
                 }
 
                 p {
                     font-weight: 600;
                     line-height: 150%;
                     color: #403F3D;
-
-
                 }
             }
         }
@@ -119,6 +123,7 @@
                     line-height: 26px;
                     color: #2C2F24;
                 }
+
                 .description {
                     color: #414536;
                     text-align: center;

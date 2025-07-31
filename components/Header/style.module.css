@@ -12,9 +12,22 @@
             padding-top: 10px;
             padding-bottom: 10px;
 
+            @media screen and (max-width: 390px) {
+                flex-direction: column;
+                gap: 15px;
+            }
+
             .container {
                 display: flex;
                 gap: 25px;
+
+                @media screen and (max-width: 800px) {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                 @media screen and (max-width: 390px) {
+                    align-items: center;
+                }
 
                 .info {
                     display: flex;
@@ -48,7 +61,6 @@
                         background-image: url(./img/github.svg);
                     }
                 }
-
             }
         }
     }
@@ -64,6 +76,11 @@
             align-items: center;
             padding-top: 29px;
             padding-bottom: 20px;
+
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+                gap: 30px;
+            }
 
             .logo {
                 display: flex;
@@ -104,5 +121,23 @@
                 color: #182226;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1340px) {
+
+    .backgrountTop,
+    .backgroundBottom {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .backgrountTop,
+    .backgroundBottom {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
